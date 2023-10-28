@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <style>
+     h1{text-align: center;}
+     a{text-align: center;}
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: #ffffff;
+        background-color: #008080;
+        border-radius: 6px;
+        outline: none;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>Register Page</h1>
+
+<div style="text-align:center">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+    </form>
+</div>
+<br>
+<br>
+<div style="text-align:center">
+    <a class="button" href="{{ url_for('login') }}">Already have an account? Log In</a>
+</div>
+
+</body>
+
+</html>

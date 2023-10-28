@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <style>
+     h1{text-align: center;}
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: #ffffff;
+        background-color: #008080;
+        border-radius: 6px;
+        outline: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Please login/Signup to check loan eligibility.</h1>
+
+<div style="text-align:center">
+    <a class="button" href="{{ url_for('login') }}">Login Now</a><br>
+</div>
+<br>
+<div style="text-align:center">
+    <a class="button"  href="{{ url_for('register') }}"></b>Register Now</a><br>
+</div>
+
+</body>
+</html>
